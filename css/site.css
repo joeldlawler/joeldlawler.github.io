@@ -1,0 +1,120 @@
+@media (min-width: 300px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+img {
+  border: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  color: #777;
+  height: 400px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-item-left {
+  height: 200px;
+  flex: 50%;
+  
+}
+
+.flex-item-right {
+  flex: 50%;
+  padding-top: 20px;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+.header {
+  background-color: #0e125b;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #4993bd;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+#button-container {
+  text-align: center;
+}
+
+#button-container > button {
+  margin: 0;
+  padding: 10px 18px;
+  color: white;
+  background-color: #008000;
+  border: none;
+  border-radius: 3px;
+  transition: all 200ms ease-in-out;
+  font-size: 14px;
+}
+
+#button-container > button:hover {
+  background-color: #00a000;
+}
+
+#button-container > button:active {
+  background-color: #006000;
+}
+
+.weather-container {
+  color: #777;
+  margin-right: 0;
+  font-size: 10px; 
+}
+
+.weather-icon {
+  border:0;
+  outline:none;
+  height: 75px;
+  width: 75px;
+  margin-left: auto;
+}
