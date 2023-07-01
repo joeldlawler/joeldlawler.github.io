@@ -3,7 +3,11 @@
 
 class Test {
     constructor() {
-        // I fixed the getElements call 
+        /* 
+        I changed this.testResults = document.getElementsByClassName('test-results'); 
+        to this.testResults = document.getElementById('test-results'); because the original code had a missing [0]. 
+        Additionally, I prefer to call the elements explicitly by ID rather than class to avoid confusion.
+        */ 
         this.locationName = document.getElementById('weather-location');
         this.conditionResults = document.getElementById('weather-condition');
         this.testResults = document.getElementById('test-results');
@@ -37,9 +41,9 @@ class Test {
         var temp_f = results.current.temp_f;
         var location = results.location.name;
 
-        this.locationName.innerHTML = (location || '').toString();
-        this.conditionResults.innerHTML = (condition || '').toString();
-        this.tempResults.innerHTML = 'Temp:' + (temp_f || '').toString() + '&deg;F';
-        this.iconResults.src = 'https:' + (icon || '').toString();
+        this.locationName.innerHTML = location;
+        this.conditionResults.innerHTML = condition;
+        this.tempResults.innerHTML = 'Temp:' + temp_f  + '&deg;F';
+        this.iconResults.src = 'https:' + icon;
     }
 }

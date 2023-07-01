@@ -2,7 +2,6 @@
 
 /**
  * Creates a button for kicking off the test and adds it to the DOM.
- *
  * @param {HTMLElement} context  the parent element to add the button to
  * @param {Test}        test     the test to be executed
  * @returns {HTMLElement} the button added to the test

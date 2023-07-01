@@ -73,13 +73,9 @@ img {
   font-size: 10px;
 }
 
-h1 {
-  font-size: 2em;
-  margin-top: 0;
-}
-
-p {
-  margin-bottom: 1em;
+#errorMesage {
+ color: crimson;
+ text-align: center;
 }
 
 #button-container {
