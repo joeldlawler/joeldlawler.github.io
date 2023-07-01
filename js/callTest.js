@@ -7,11 +7,13 @@
  * @returns {HTMLElement} the button added to the test
  */
 function addButtonForTest(context, test) {
+    // Set zipcode to Nashville
+    const zipCode = "37201";
     let testButton = document.createElement('button');
 
     testButton.type = 'button';
     testButton.innerText = 'Get the Nashville Weather';
-    testButton.onclick = () => test.run();
+    testButton.onclick = () => test.run(zipCode);
 
     context.appendChild(testButton);
 
