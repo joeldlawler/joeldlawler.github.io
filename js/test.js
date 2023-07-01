@@ -33,7 +33,7 @@ class Test {
 
   // Display error message,
   setError(message) {
-    this.errorMesage.innerHTML = (message || "").toString();
+    this.errorMesage.textContent = (message || "").toString();
   }
 
   setResults(results) {
@@ -44,8 +44,8 @@ class Test {
     let location = results.location.name;
 
      // Set the values in html elemements
-    this.locationName.innerHTML = location;
-    this.conditionResults.innerHTML = condition;
+    this.locationName.textContent = location;
+    this.conditionResults.textContent = condition;
     this.tempResults.innerHTML = "Temp:" + temp_f + "&deg;F";
     this.iconResults.src = "https:" + icon;
   }
