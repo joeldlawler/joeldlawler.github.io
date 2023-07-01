@@ -20,11 +20,10 @@ class Test {
     * I signed up and got a new one.
     */
     const apiKey = "4a0f5995b38241f19e683718233006";
-    const city = zipCode;
     // The 'try' was missing so I added it.
     try {
       const response = await axios.get(
-        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`
+        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${zipCode}`
       );
       this.setResults(response.data);
     } catch (error) {
