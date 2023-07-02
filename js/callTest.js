@@ -22,7 +22,7 @@ function addButtonForTest(context, test, zipCode, buttonText) {
 
 // Create the Test and add a button to the UI for running the test
 const test = new Test();
-const buttonContainer = document.getElementById('button-container');
+const buttonContainer = document.getElementById('location-button');
 // I changed the city to zipcode to make it a little more precise 
 const zipCode = "37201";
 const buttonText = "Get the Nashville Weather";

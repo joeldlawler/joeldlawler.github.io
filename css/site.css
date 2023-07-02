@@ -10,11 +10,11 @@
   }
 }
 
-#button-container {
+.button-container {
   text-align: center;
 }
 
-#button-container > button {
+.button-container > button {
   margin: 0;
   padding: 10px 18px;
   color: white;
@@ -25,16 +25,16 @@
   font-size: 14px;
 }
 
-#button-container > button:hover {
+.button-container > button:hover {
   background-color: #00a000;
 }
 
-#button-container > button:active {
+.button-container > button:active {
   background-color: #006000;
 }
 
 /* This was created to format error messages */
-#errorMesage {
+.errorMesage {
  color: crimson;
  text-align: center;
 }

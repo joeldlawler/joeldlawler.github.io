@@ -12,8 +12,8 @@ class getYear {
     try {
       const year = new Date().getFullYear();
       this.copyrightYear.textContent = year;
-      // Uncomment the below to see error message. 
-      // this.doesNotExist.textContent = "This is not the div you're looking for.."
+      // Uncomment the below to see error message.
+      // this.doesNotExist.textContent = "This is not the div you're looking for..";
     } catch (error) {
       this.setError(error);
     }
