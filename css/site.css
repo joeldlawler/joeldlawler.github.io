@@ -1,81 +1,13 @@
-@media (min-width: 300px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  font-family: sans-serif;
-  background-color: #fff;
-}
-
-img {
-  border: none;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 200px;
-  color: #777;
-  height: 400px;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-.flex-item-left {
-  height: 200px;
-  flex: 50%;
-  
-}
-
-.flex-item-right {
-  flex: 50%;
-  padding-top: 20px;
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-item-right, .flex-item-left {
     flex: 100%;
   }
 }
 
-.header {
-  background-color: #0e125b;
-  border-radius: 5px;
-  color: #fff;
-  padding: 20px;
-}
-
-.footer {
-  background-color: #4993bd;
-  border-radius: 5px;
-  color: #fff;
-  padding: 5px;
-  font-size: 10px;
-}
-
-#errorMesage {
- color: crimson;
- text-align: center;
+@media (min-width: 300px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 #button-container {
@@ -101,16 +33,82 @@ img {
   background-color: #006000;
 }
 
+/* This was created to format error messages */
+#errorMesage {
+ color: crimson;
+ text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  color: #777;
+}
+
+.flex-item-left {
+  height: 200px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+  padding-top: 20px;
+}
+
+.footer {
+  background-color: #4993bd;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.header {
+  background-color: #0e125b;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+img {
+  border: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .weather-container {
   color: #777;
+  font-size: 10px;
   margin-right: 0;
-  font-size: 10px; 
 }
 
 .weather-icon {
   border:0;
-  outline:none;
   height: 75px;
-  width: 75px;
   margin-left: auto;
+  outline:none;
+  width: 75px;
+}
+
+body {
+  background-color: #fff;
+  font-family: sans-serif;
 }
