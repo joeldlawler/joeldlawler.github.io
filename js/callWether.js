@@ -13,7 +13,7 @@ function addButtonForTest(context, test, zipCode, buttonText) {
 
     testButton.type = 'button';
     testButton.innerText = buttonText;
-    testButton.onclick = () => test.run(zipCode);
+    testButton.onclick = () => test.getWeather(zipCode);
 
     context.appendChild(testButton);
 
@@ -21,7 +21,7 @@ function addButtonForTest(context, test, zipCode, buttonText) {
 }
 
 // Create the Test and add a button to the UI for running the test
-const test = new Test();
+const test = new Weather();
 const buttonContainer = document.getElementById('location-button');
 // I changed the city to zipcode to make it a little more precise 
 const zipCode = "37201";

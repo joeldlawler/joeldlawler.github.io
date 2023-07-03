@@ -1,6 +1,9 @@
+// I changed this to Weather from Test to make the code more readable and 
+// also test is too common which might cause issues elsewhere.  
+
 "use strict";
 
-class Test {
+class Weather {
   constructor() {
     /* 
     *  I changed this.testResults = document.getElementsByClassName('test-results'); 
@@ -14,16 +17,22 @@ class Test {
     this.iconResults = document.getElementById("weather-icon");
   }
 
-  async run(zipCode) {
+  // Renamed this from run to getWeather 
+  async getWeather(zipCode) {
     /* 
     * The API key that was supplied (25e989bd41e3e24ce13173d8126e0fd6) has been disabled.
     * I signed up and got a new one.
     */
     const apiKey = "4a0f5995b38241f19e683718233006";
+    // I moved the url to a variable
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${zipCode}`;
+    // This can be uncommented and the below active url commented out to simulate an error.
+    // const url = `https://https://httpstat.us/500`;
+
     // The 'try' was missing so I added it.
     try {
       const response = await axios.get(
-        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${zipCode}`
+        url
       );
       this.setResults(response.data);
     } catch (error) {
